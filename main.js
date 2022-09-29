@@ -32,15 +32,17 @@
 //      alert(`${cantidadUsd} usd son ${cantidadUsd*valorPeso} clp`);
 // }
 
-let repetir = false;  
-do{
-const divisa1 = prompt(`seleccione la opcion divisa origen:\n1 - usd\n2 - clp\n3 - eur`);
-const divisa2 = prompt(`seleccione la opcion divisa destino:\n1 - usd\n2 - clp\n3 - eur`);
-const cantidad = parseFloat(prompt(`ingrese cantidad:`));
+
+let divisa1 = prompt(`seleccione la opcion divisa origen:\n1 - usd\n2 - clp\n3 - eur`);
+let divisa2 = prompt(`seleccione la opcion divisa destino:\n1 - usd\n2 - clp\n3 - eur`);
+let cantidad = parseFloat(prompt(`ingrese cantidad:`));
 const valorUsdClp = 994;
 const valorEurClp = 955;
 const valorUsdEur = 1.04;
 
+let repetir = false; 
+do{
+ 
 function usd(){
     const resultadoUsdClp = cantidad*valorUsdClp;
     if(divisa2 == "3"){
