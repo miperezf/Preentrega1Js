@@ -40,7 +40,7 @@ const valorUsdClp = 994;
 const valorEurClp = 955;
 const valorUsdEur = 1.04;
 
-let repetir = false; 
+let repetir = false;
 do{
  
 function usd(){
